@@ -198,6 +198,12 @@ function formatObjects(data, ...objects) {
         });
       } else if (tag.includes('og')) {
         return getTag('meta', null, { property: tag, content: value });
+      } else if (tag === 'favicon' && value) {
+        return getTag('link', null, { 
+          rel: 'icon', 
+          type: 'image/x-icon',
+          href: `data:image/x-icon;base64,${value}` 
+        });
       } else {
         return getTag('meta', null, {
           name: tag,
