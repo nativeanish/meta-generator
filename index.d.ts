@@ -21,12 +21,16 @@ interface MetaGeneratorOptions {
   site_name?: string;
   /** Robots meta tag content */
   robots?: string;
+  /** UUID identifier */
+  uuid?: string;
+  /** ARNS name */
+  arns_name?: string;
   /** Custom crawler directives */
   crawlers?: Record<string, string>;
   /** Preconnect URLs */
   preconnect?: string | Array<string | { url: string; crossorigin?: boolean }>;
   /** DNS prefetch URLs */
-  dns_prefetch?: string | Array<string>;
+  dns_prefetch?: string | string[];
   /** CSS files to include */
   css?: string | string[];
   /** Inline CSS content */
@@ -93,7 +97,3 @@ interface MetaGeneratorOptions {
   /** Base64 encoded favicon */
   favicon?: string;
 }
-
-declare function metagen(options: MetaGeneratorOptions): string[];
-
-export = metagen;
