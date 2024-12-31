@@ -35,6 +35,8 @@ module.exports = (data) => {
     'robots': data.robots,
     'crawlers': handleCustomCrawlers(data),
     'generator': data.generator,
+    'uuid': data.uuid,
+    'arns_name': data.arns_name,
   }
 
   const openGraph = {
