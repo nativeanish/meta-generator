@@ -202,7 +202,7 @@ function formatObjects(data, ...objects) {
         return getTag('link', null, { 
           rel: 'icon', 
           type: 'image/x-icon',
-          href: `data:image/x-icon;base64,${value}` 
+          href: `${value}` 
         });
       } else {
         return getTag('meta', null, {
