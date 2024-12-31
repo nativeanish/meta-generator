@@ -51,6 +51,8 @@ const SUPPORTED_ARGS = [
   'twitter_attr_name',
   'custom',
   'minified',
+  'uuid',
+  'arns_name'
 ];
 
 module.exports = {
