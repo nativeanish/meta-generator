@@ -4,6 +4,7 @@
   "description": "Utility for generating document metadata.",
   "main": "src/index.js",
   "types": "index.d.ts",
+  "type":"module",
   "scripts": {
     "test": "jest --colors --verbose"
   },
